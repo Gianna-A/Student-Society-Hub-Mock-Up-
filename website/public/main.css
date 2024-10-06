@@ -151,7 +151,7 @@ ul {
   text-align: center;
 }
 
-/*navigation bar*/
+/*Adapted code - navigation bar*/
 li {
   display: inline-block;
 }
@@ -167,7 +167,7 @@ li a {
 li a:hover {
   background-color: #111;
 }
-/*end of navigation bar*/
+/* Adapted code - end of navigation bar*/
 
 .customButton {
   background-color: #000000;
