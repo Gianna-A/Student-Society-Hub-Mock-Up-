@@ -1,7 +1,6 @@
 /*
    Initial inspiration for this came from Joe's tutorial on December 5, 2023.
    Significant modifications, expansions, and reworkings have been applied.
-   Original code copyright (c) Joe. All rights reserved.
 */
 const express = require('express');
 const ejs = require('ejs');
