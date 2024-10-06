@@ -1,5 +1,5 @@
 /*
-   Initial inspiration for this CSS came from Joe's tutorial on December 5, 2023.
+   Initial inspiration for this came from Joe's tutorial on December 5, 2023.
    Significant modifications, expansions, and reworkings have been applied.
    Original code copyright (c) Joe. All rights reserved.
 */
