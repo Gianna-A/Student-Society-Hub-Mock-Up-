@@ -1,0 +1,65 @@
+<!--
+   This project was initially inspired by code from Joe Appleton's tutorial on December 15, 2023.
+   Portions of the original code have been removed, modified, expanded, and reworked extensively.
+   Original code copyright (c) Joe. All rights reserved.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/main.css">
+	<title>Students</title>
+</head>
+
+<body>
+
+	<div class="content">
+		<h1> Students </h1>
+		<ul>
+			<li><a class="active" href="/">Home</a></li>
+			<li><a href="/students">All Students</a></li>
+			<li><a href="/societies">All Societies</a></li>
+			<li><a href="/events">Events</a></li>
+		  </ul>
+
+		<section class="dataTable">
+			<table class="data">
+				<tr>
+					<th>Student ID</th>
+					<th>First Name</th>
+					<th>Last Name</th>
+					<th> DOB </th>
+					<th> Phone </th>
+					<th>Course</th>
+					<th> Type </th>
+					<th> Actions </th>
+				</tr>
+				<tr>
+				    <% students.forEach(student=> { %>
+				<tr>
+						<td><%- student.URN %></td>
+						<td><%- student.Stu_FName %></td>
+						<td><%- student.Stu_LName %></td>
+						<td><%- student.Stu_DOB %></td>
+						<td><%- student.Stu_Phone %></td>
+						<td><%- student.Crs_Title %></td>
+						<td><%- student.Stu_Type %></td>
+						<td><a href="/students/edit/<%- student.URN %>"> Edit </a> <a href="/students/view/<%- student.URN %>"> View </a>
+						</tr>
+						<% }) %>
+				</tr>
+
+
+
+
+
+			</table>
+		</section>
+	</div>
+
+</body>
+
+</html>

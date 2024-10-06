@@ -1,0 +1,163 @@
+/*
+   Initial inspiration for this CSS came from Joe Appleton's tutorial on December 5, 2023.
+   Significant modifications, expansions, and reworkings have been applied.
+   Original code copyright (c) Joe. All rights reserved.
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.info {
+  text-align: center;
+  margin-top: 75px;
+}
+
+body {
+  font-family: "Candara", sans-serif;
+}
+
+.uln {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  border-radius: 0.25rem;
+  text-align: center;
+}
+
+.lin {
+  display: inline-block;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+
+.content {
+  max-width: 1800px;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 2rem;
+  background-color: #000000;
+  font-weight: 700;
+  padding: 30px 0;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 0.5rem;
+}
+
+
+.info-header {
+  width: 50%;
+  text-align: center;
+  left: 25%;
+}
+
+.index-paragraph {
+  text-align: center;
+  left: 0;
+  width: 50%;
+}
+
+.dash_items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin: 0 auto;
+  max-width: 1000px;
+  flex-direction: column;
+}
+
+.dash_items .card {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.5rem rgba(106, 9, 197, 0.1);
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+  width: 200px;
+  cursor: pointer;
+}
+
+.dash_items .card:hover {
+  background-color: #9c9b9b;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+.dash_items a {
+  color: #000;
+  text-decoration: none;
+}
+
+.data th,
+td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.data th {
+  background-color: #333;
+  color: #fff;
+}
+
+.data tr:nth-child(even) {
+  background-color: #f4f7fa;
+}
+
+.data tr:hover {
+  background-color: #ddd;
+}
+
+.breadcrumbs {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 1rem;
+}
+
+.breadcrumbs li {
+  display: inline;
+  list-style: lower-greek;
+  margin-right: 0.5rem;
+}
+
+.customButton {
+  background-color: #000000;
+  color: white;
+  padding: 10px 20px;
+  border: #3f3e41;
+  border-radius: 5px;
+}
+
+.customButton:hover{
+  background-color: #89898d;
+  cursor: pointer;
+}
+
+.newButton {
+  margin: 0 auto;
+}
+
+.dataTable {
+  padding: 0 25%;
+}
+
+.edit_form {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 1rem;
+}

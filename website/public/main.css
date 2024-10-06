@@ -1,0 +1,185 @@
+/*
+   The CSS for this project draws inspiration from different sources, including Joe Appleton's tutorial on December 5, 2023.
+   Extensive modifications and expansions have been applied to suit project requirements.
+*/
+
+/* modified and adapted CSS code here */
+.dash_items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin: 0 auto;
+  max-width: 1000px;
+  flex-direction: column;
+  margin-left: 250px; 
+}
+
+.dash_items .card {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.5rem rgba(5, 5, 6, 0.1);
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.dash_items a {
+  color: #000;
+  text-decoration: none;
+}
+
+.data th,
+td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+
+}
+
+.data th {
+  background-color: #333;
+  color: #fff;
+}
+
+.data tr:nth-child(even) {
+  background-color: #f4f7fa;
+}
+
+.data tr:hover {
+  background-color: #ddd;
+}
+
+.breadcrumbs {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 1rem;
+}
+
+.breadcrumbs li {
+  display: inline;
+  list-style: lower-greek;
+  margin-right: 0.5rem;
+}
+
+.newButton {
+  margin: 0 auto;
+}
+
+.dataTable {
+  padding: 0 25%;
+}
+
+.edit_form {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 1rem;
+}
+
+/* End of adapted code */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Candara", sans-serif;
+}
+
+.content {
+  max-width: 1800px;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 2rem;
+  background-color: #000000;
+  font-weight: 700;
+  padding: 30px 0;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 0.25rem;
+}
+
+
+.info-header {
+  width: 76%;
+  text-align: right;
+  right: 25%;
+  top: 30%;
+  margin-top: 50px;
+}
+
+.index-paragraph {
+  font-size: 120%;
+  display: flex;
+  position: absolute;
+  top: 35%; 
+  right: 5%; 
+  width: 40%;
+  text-align: justify; 
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.logo-image{
+  position: absolute;
+  display: flex;
+  right: 0;
+  width: 20%;
+  height: 30%;
+  bottom: 0;
+  border-radius: 0.5rem;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #353434;
+  border-radius: 0.25rem;
+  text-align: center;
+}
+
+/*navigation bar*/
+li {
+  display: inline-block;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+/*end of navigation bar*/
+
+.customButton {
+  background-color: #000000;
+  color: white;
+  padding: 10px 20px;
+  border: #3f3e41;
+  border-radius: 5px;
+  margin: 15px;
+}
+
+.customButton:hover{
+  background-color: #89898d;
+  cursor: pointer;
+}
+

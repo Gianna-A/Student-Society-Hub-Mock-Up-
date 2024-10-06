@@ -1,0 +1,58 @@
+<!--
+   This project was initially inspired by code from Joe Appleton's tutorial on December 5, 2023.
+   Portions of the original code have been modified, expanded, and reworked extensively.
+   Original code copyright (c) Joe. All rights reserved.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="main.css">
+	<title>University Community Hub</title>
+</head>
+
+<body class="backim">
+	<div class="content">
+		<h1> University Community Hub </h1>
+		<ul>
+			<li><a class="active" href="/">Home</a></li>
+			<li><a href="/students">All Students</a></li>
+			<li><a href="/societies"> All Societies</a></li>
+			<li><a href="/events">Events</a></li>
+		  </ul>
+		<h2 class="info-header"> Info </h2>
+		<p class="index-paragraph" class = "container">Welcome to the University Community Hub! Explore core information on our societies and students through our interactive platform. 
+			Discover our diverse student body on the Students Page, delve into the dynamic array of societies and their dedicated leaders on the Societies & Committees Page, 
+			and stay updated with the exciting events hosted by each society on the Events Page. Whether you're seeking connections or involvement our 
+			website is your gateway to the heart of our university's spirited community.</p>
+			<div class="dash_items">
+				<section class="card">
+					<h2>
+						<%= studentCount %>
+					</h2>
+					<h3> Students </h3>
+				</section>
+				<section class="card">
+					<h2>
+						<%= societyCount %>
+					</h2>
+					<h3> Societies </h3>
+
+				</section>
+				<section class="card">
+					<h2>
+						<%= eventCount %>
+					</h2>
+					<h3> Events </h4>
+				</section>
+			<img class = "logo-image" src="images/logo.gif" alt="logo">
+		</div>
+	</div>
+
+
+</body>
+
+</html>

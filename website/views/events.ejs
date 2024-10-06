@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/main.css">
+	<title>Events</title>
+</head>
+
+<body>
+
+	<div class="content">
+		<h1> Events </h1>
+		<ul>
+			<li><a class="active" href="/">Home</a></li>
+			<li><a href="/students">All Students</a></li>
+			<li><a href="/societies">All Societies</a></li>
+			<li><a href="/events">Events</a></li>
+		  </ul>
+		<section class="dataTable">
+			<table class="data">
+				<tr>
+					<th>Event Name</th>
+					<th>Society Name</th>
+					<th> Date </th>
+				</tr>
+				<tr>
+				    <% events.forEach(event=> { %>
+				<tr>
+						<td><%- event.Event_Name %></td>
+						<td><%- event.Soc_Name %></td>
+						<td><%- event.Event_Date %></td>
+						</tr>
+						<% }) %>
+				</tr>
+
+
+			</table>
+		</section>
+	</div>
+
+</body>
+
+</html>

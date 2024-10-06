@@ -1,0 +1,67 @@
+<!--
+   This project was initially inspired by code from Joe Appleton's tutorial on December 5, 2023.
+   Portions of the original code have been removed, modified, expanded, and reworked extensively.
+   Original code copyright (c) Joe. All rights reserved.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/student_view.css">
+	<title>Student View</title>
+</head>
+
+<body>
+
+	<div class="content">
+		<h1> View Student </h1>
+			<ul class = "uln">
+				<li class="lin"><a class="active" href="/">Home</a></li>
+				<li class="lin"><a href="/students">All Students</a></li>
+				<li class="lin"><a href="/societies">All Societies</a></li>
+				<li class="lin"><a href="/events">Events</a></li>
+			  </ul>
+
+			<div class="info">
+			  <h2> <%- student.Stu_FName %> <%- student.Stu_LName %> </h2>
+			<ul>
+
+				<li> URN: <%= student.URN %> </li>
+				<li> DOB: <%= student.Stu_DOB %> </li>
+				<li> Course: <%= student.Crs_Title %> </li>
+				 <li> Phone: <%= student.Stu_Phone %> </li>
+				 <li> Student type: <%= student.Stu_Type %> </li>
+				 <li>
+					Hobbies:
+					<b>
+						<!--For each hobby object in the hobbies array, 
+							the Hobby_Name property is extracted and a new array 
+						    is created with only names of the hobbies.
+						 -->
+					<% if (hobbies.length > 0) { %>
+						<%= hobbies.map(hobby => hobby.Hobby_Name).join(', ') %>
+					<% } else { %>
+						No hobbies available
+					<% } %>
+				    </b>
+			     </li>
+				 <li>
+					Societies:
+					<b>
+					<% if (societies.length > 0) { %>
+						<%= societies.map(society => society.Soc_Name).join(', ') %>
+					<% } else { %>
+						No Societies available
+					<% } %>
+				    </b>
+			    </li>
+			</ul>
+		</div>
+
+	</div>
+
+</body>
+
+</html>
